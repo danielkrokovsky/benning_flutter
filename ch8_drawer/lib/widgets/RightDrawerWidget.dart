@@ -16,12 +16,11 @@ class RightDrawerWidget extends StatelessWidget {
         children: <Widget>[
           DrawerHeader(
             padding: EdgeInsets.zero,
-            child: Icon(
-              Icons.face,
-              size: 128.0,
-              color: Colors.white54,
-            ),
-            decoration: BoxDecoration(color: Colors.blue),
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage("assets/images/home_top_mountain.jpg"),
+                    fit: BoxFit.cover)),
+            child: Text("Header"),
           ),
           MenuListTileWidget(),
         ],
